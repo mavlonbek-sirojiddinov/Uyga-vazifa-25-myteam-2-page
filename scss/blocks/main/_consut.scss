@@ -1,0 +1,218 @@
+.consut {
+  background: #F67E7E;
+  background-image: url(../../../img/consut-disk.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 650px) 100px;
+  z-index: -1;
+}
+
+.site-consut {
+  width: 1017px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.consut-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #012F34;  
+}
+
+.consut-btn  {
+  width: 153px;
+  text-align: center;
+  padding: 9px 0;
+  border: 2px solid #000;
+  border-radius: 24px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.consut-btn:hover {
+  border: 5px solid aqua;
+  background: #4dff00;
+  box-shadow: 0 0 5px #4dff00,
+              0 0 25px aqua,
+              0 0 50px aqua,
+              0 0 75px aqua;  
+}
+
+.link-btn {
+  color: #000;
+  text-decoration: none;
+}
+
+.link-btn:hover {
+  color: #fff;
+}
+
+@include mediaDevices (768px) {
+  .consut {
+    background: #F67E7E;
+    width: 100%;
+  }
+  
+  .site-consut {
+    width: 100%;
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .consut-list-item {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  
+  .consut-heading {
+    width: 100%;
+    max-width: 336px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #012F34;  
+  }
+  
+  
+  .consut-list a {
+    width: 100%;
+    max-width: 180px;
+    position: relative;
+    display: inline-block;
+    padding: 13px 20px;
+    border: 2px solid #4dff00;
+    text-transform: uppercase;
+    font-weight: 600px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: 0s;
+    border-radius: 24px;
+  }
+  
+  .consut-list a:hover {
+    transition-delay: 1.5s;
+    border-radius: 24px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px #4dff00,
+    0 0 20px #4dff00,
+    0 0 40px #4dff00,
+    0 0 80px #4dff00,
+    0 0 160px #4dff00;
+  }
+  
+  .consut-list a span {
+    position: relative;
+    z-index: 100;
+  }
+  
+  .consut-list a:nth-child(1) {
+    filter: hue-rotate(80deg);
+  }
+  
+  .consut-list a::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 24px;
+    width: 20px;
+    height: 2px;
+    background-color: #4dff00;
+    box-shadow: 5px -8px 0 #4dff00,
+    5px 8px 0 #4dff00;
+    transition: width 0.5s, left 0.5s, height 0.5s, 
+    box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+  }
+  
+  .consut-list a:hover::before {
+    width: 60%;
+    height: 104%;
+    left: -2px;
+    box-shadow: 5px 0 0 #4dff00,
+    5px 0 0 #4dff00;
+    transition-delay: 0s,0.5s,1s,1s;
+  }
+  
+  .consut-list a::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 24px;
+    width: 20px;
+    height: 2px;
+    background-color: #4dff00;
+    box-shadow: -5px -8px 0 #4dff00,
+    -5px 8px 0 #4dff00;
+    transition: width 0.5s, right 0.5s, height 0.5s, 
+    box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+  }
+  
+  .consut-list a:hover::after {
+    width: 60%;
+    height: 104%;
+    right: -2px;
+    box-shadow: -5px 0 0 #4dff00,
+    -5px 0 0 #4dff00;
+    transition-delay: 0s,0.5s,1s,1s;
+  }
+}
+
+@include mediaDevices (568px) {
+  .consut {
+    background: #F67E7E;
+    width: 100%;
+  }
+  
+  .site-consut {
+    width: 100%;
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .consut-list-item {
+    width: 100%;
+    max-width: 327px;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  
+  .consut-heading {
+    width: 100%;
+    max-width: 336px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #012F34;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .consut-btn  {
+    width: 153px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px 0;
+    border: 2px solid #fff;
+    border-radius: 24px;
+  }
+
+  .link-btn {
+    color: $text-color;
+    text-decoration: none;
+  }
+}

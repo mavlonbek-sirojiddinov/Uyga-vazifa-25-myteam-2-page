@@ -1,0 +1,96 @@
+.klent {
+  background: #012F34;
+  background-image: url(../../../img/clinet-disk.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 648px) 0;
+}
+
+.klent-heading {
+  padding-top: 140px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFFFFF;
+  margin-bottom: 70px;
+}
+
+.klent-logo-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.klent-logo-item {
+  margin-bottom: 140px;
+}
+
+@include mediaDevices(768px) {
+
+  .klent-logo-list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    max-width: 689px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kelnt-logo-img {
+    width: 103px; 
+    height: 17px;
+  }
+
+  .last-img {
+    width: 68px;
+    height: 25px;
+  }
+
+  .klent-heading {
+    padding-top: 100px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 52px;
+  }
+
+  .klent-logo-item {
+    margin-bottom: 100px;
+  }
+}
+
+@include mediaDevices(568px) {
+  .klent-logo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 327px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kelnt-logo-img {
+    width: 146px; 
+    height: 24px;
+  }
+
+  .last-img {
+    width: 95px;
+    height: 45px;
+  }
+
+  .klent-heading {
+    padding-top: 100px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+  }
+
+  .klent-logo-item {
+    margin-bottom: 55px;
+  }
+}
